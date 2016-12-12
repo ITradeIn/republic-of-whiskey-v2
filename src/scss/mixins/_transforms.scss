@@ -1,0 +1,31 @@
+@mixin translate($x,$y) {
+  transform: translate($x, $y);
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+}
+
+@mixin rotate($rotate) {
+  -webkit-transform: rotate($rotate);
+  -moz-transform: rotate($rotate);
+  -o-transform: rotate($rotate);
+  -ms-transform: rotate($rotate);
+  transform: rotate($rotate);
+}
+
+@mixin translate3d($x,$y) {
+  transform: translate3d($x, $y, 0);
+  -webkit-transform: translate3d($x, $y, 0);
+  -moz-transform: translate3d($x, $y, 0);
+  -o-transform: translate3d($x, $y, 0);
+  -ms-transform: translate3d($x, $y, 0);
+}
+
+@mixin scale($x, $y) {
+  -webkit-transform: scale($x, $y);
+  -moz-transform: scale($x, $y);
+  -o-transform: scale($x, $y);
+  -ms-transform: scale($x, $y);
+  transform: scale($x, $y);
+}

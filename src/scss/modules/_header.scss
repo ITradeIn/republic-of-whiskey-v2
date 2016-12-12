@@ -1,0 +1,23 @@
+header > .navbar {
+  background-color: transparent;
+  border: none;
+  padding-top: 30px;
+  z-index: 1000;
+  .navbar-right {
+    margin-right: 0;
+  }
+  li > a {
+    color: $white!important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 200;
+    @include font-size(13);
+  }
+  .home {
+    position: absolute;
+    @extend %center-x;
+    @media all and (max-width: 1280px) {
+      width: 260px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.main-wrapper {
+
+}
+.contact-items {
+  text-align: left;
+  max-width: 380px;
+  margin: 0 auto 40px;
+  li {
+    display: flex;
+    margin-bottom: 15px;
+    > span:first-child {
+      width: 50px;
+      text-align: center;
+      position: relative;
+    }
+    > span:last-child {
+      width: calc(100% - 50px);
+    }
+  }
+  i {
+    font-size: 22px;
+    position: absolute;
+    @extend %center-xy;
+  }
+  a {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    @include font-size(22);
+  }
+  address {
+    font-family: $font-secondary;
+    margin: 0;
+    @include font-size(16);
+  }
+}
+.social-media {
+  li {
+    display: inline-block;
+  }
+  a {
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    background-color: $white;
+    color: $primary;
+    border: 2px solid $white;
+    @include border-radius(48px);
+    @include transition-all(0.25s);
+  }
+  a:hover {
+    color: $white;
+    background-color: transparent;
+  }
+  li:nth-child(2) {
+    margin: 0 20px;
+  }
+}

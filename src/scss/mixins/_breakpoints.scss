@@ -1,0 +1,68 @@
+@mixin breakpoint($point) {
+  // breakpoint for screensize with max-width of 480px
+  @if $point == phone {
+    @media (max-width: 30em) {
+      @content;
+    }
+  } // breakpoint for screensize with max-width of 600px
+  @else if $point == phone-lg {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+    // breakpoint for screensize with max-width of 767px
+  @else if $point == tablet-portrait {
+    @media (max-width: 47.9375em) {
+      @content;
+    }
+  }
+    // breakpoint for screensize with min-width of 768px and max-width of 991px
+  @else if $point == tablet-landscape {
+    @media (min-width: 48em) and (max-width: 61.9375em){
+      @content;
+    }
+  }
+    // breakpoint for screensize with max-width of 991px
+  @else if $point == tablet {
+    @media (max-width: 61.9375em){
+      @content;
+    }
+  }
+    // breakpoint for screensize with max-width of 1199px
+  @else if $point == laptop {
+    @media (max-width: 74.9375em) {
+      @content;
+    }
+  }
+    // breakpoint for screensize with max-width of 1439px
+  @else if $point == desktop-sm {
+    @media (max-width: 89.9375em) {
+      @content;
+    }
+  }
+    // breakpoint for screensize with min-width of 1440px
+  @else if $point == desktop-md {
+    @media (min-width: 90em) {
+      @content;
+    }
+  }
+    // breakpoint for screensize with min-width of 1600px
+  @else if $point == desktop-lg {
+    @media (min-width: 100em) {
+      @content;
+    }
+  }
+    // breakpoint for non-retina devices
+  @else if $point == non-retina {
+    @media screen and (-webkit-max-device-pixel-ratio: 1) {
+      @content;
+    }
+  }
+    // breakpoint for retina devices
+  @else if $point == retina {
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+    }
+  }
+}
+

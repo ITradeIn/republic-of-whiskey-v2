@@ -1,0 +1,31 @@
+// styling placeholder text in textfield
+@mixin text-placeholder($color, $font-size, $opacity, $font-weight){
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $font-size;
+    opacity: $opacity;
+    font-weight: $font-weight;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $color;
+    font-size: $font-size;
+    opacity: $opacity;
+    font-weight: $font-weight;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: $color;
+    font-size: $font-size;
+    opacity: $opacity;
+    font-weight: $font-weight;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $font-size;
+    opacity: $opacity;
+    font-weight: $font-weight;
+  }
+
+}

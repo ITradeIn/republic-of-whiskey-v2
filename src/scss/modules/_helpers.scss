@@ -1,0 +1,26 @@
+.absoluteCenter {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  @extend %center-y;
+}
+.btn {
+  background-color: transparent;
+  padding: 12px 25px;
+  text-align: center;
+  margin-top: 10px;
+  @include transition-all(0.25s);
+  @include border-radius(0);
+  &.btn-primary {
+    border: 2px solid $white;
+  }
+  &.btn-primary:hover,
+  &.btn-primary:active {
+    background: $white;
+    color: $primary;
+  }
+  &.-border {
+    @include border-radius(7px);
+  }
+}
