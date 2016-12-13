@@ -1,0 +1,28 @@
+#scroll-nav {
+  position: fixed;
+  z-index: 1000;
+  right: 35px;
+  @extend %center-y;
+  li {
+    opacity: 0.5;
+  }
+  li.active {
+    opacity: 1;
+  }
+  a {
+    margin: 10px 0;
+    height: 13px;
+    width: 13px;
+    padding: 0;
+    font-size: 0;
+    border: 2px solid $white;
+    @include border-radius(13px);
+  }
+  li.active > a {
+    background-color: $white;
+  }
+  li:not(.active) > a:active,
+  li:not(.active) > a:focus {
+    background: transparent;
+  }
+}

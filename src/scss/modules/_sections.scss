@@ -2,6 +2,17 @@
   height: 100vh;
   background: $primary;
   position: relative;
+  background-attachment: fixed!important;
+  .toggle-next {
+    display: block;
+    width: 80px;
+    height: 32px;
+    background: transparent url('/assets/img/caret-down.png') 100% no-repeat;
+    position: absolute;
+    bottom: 60px;
+    z-index: 1000;
+    @extend %center-x;
+  }
   .absoluteCenter {
     top: 52%;
     @media all and (max-width: 1280px) {
@@ -91,36 +102,33 @@
   height: 100%;
   width: 100%;
 }
-.bg-1:after {
-  background-color: rgba(2, 70, 74, 0.6);
+.bg-home {
+  background: transparent url('/assets/img/bg/landscape.jpg') center bottom/cover no-repeat;
 }
-.bg-1:before {
-  background: transparent url('/assets/img/bg/1.jpg') center/cover no-repeat;
+.bg-our-whiskey-1 {
+  background: transparent url('/assets/img/bg/republic-of-whiskey-bottle.jpg') center/cover no-repeat;
 }
-.bg-2:after {
-  background-color: rgba(2, 70, 74, 0.6);
+.bg-our-whiskey-2 {
+  background: transparent url('/assets/img/bg/republic-of-whiskey-bottle-2.jpg') center/cover no-repeat;
 }
-.bg-2:before {
-  background: transparent url('/assets/img/bg/2.jpg') center/cover no-repeat;
+.bg-how-its-made-1 {
+  background: transparent url('/assets/img/bg/how-1-still.jpg') center/cover no-repeat;
 }
-.bg-3:before {
-  background: transparent url('/assets/img/bg/3.jpg') center/cover no-repeat;
+.bg-how-its-made-2 {
+  background: transparent url('/assets/img/bg/how-2-still.jpg') center/cover no-repeat;
 }
-.bg-4:before {
-  background: transparent url('/assets/img/bg/4.jpg') center/cover no-repeat;
+.bg-how-its-made-3 {
+  background: transparent url('/assets/img/bg/how-3-still.jpg') center/cover no-repeat;
 }
-.bg-5:before {
-  background: transparent url('/assets/img/bg/5.jpg') center/cover no-repeat;
+.bg-how-its-made-4 {
+  background: transparent url('/assets/img/bg/how-4-stored.jpg') center/cover no-repeat;
 }
-.bg-6:before {
-  background: transparent url('/assets/img/bg/6.jpg') center/cover no-repeat;
+.bg-how-its-made-5 {
+  background: transparent url('/assets/img/bg/how-5-blend.jpg') center/cover no-repeat;
 }
-.bg-7:before {
-  background: transparent url('/assets/img/bg/7.jpg') center bottom/cover no-repeat;
+.bg-become-citizen {
+  background: transparent url('/assets/img/bg/become-citizen.jpg') center/cover no-repeat;
 }
-.bg-8:after {
-  background-color: rgba(169, 68, 66, 0.5);
-}
-.bg-8:before {
-  background: transparent url('/assets/img/bg/3.jpg') center/cover no-repeat;
+.bg-contact-us {
+  background: transparent url('/assets/img/bg/contact.jpg') center/cover no-repeat;
 }

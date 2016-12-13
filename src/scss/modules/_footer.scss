@@ -37,12 +37,14 @@ footer {
     .closing {
       border-left: none;
     }
-    input[type="text"] {
+    #mc_embed_signup {
+      width: calc(100% - 14px);    }
+    input[type="email"] {
       font-family: $font-secondary;
       font-weight: 200;
       padding: 5px 0;
-      width: calc(100% - 14px);
       background: transparent;border: none;
+      width: 100%;
       @include font-size(15);
     }
   }
