@@ -40,7 +40,6 @@ $RECYCLE.BIN/
 ## minified js/css
 app/assets/css/style.css
 app/assets/css/style.min.css
-app/assets/js/scripts.js
 app/assets/js/scripts.min.js
 
 node_modules
