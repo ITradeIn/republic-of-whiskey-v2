@@ -48,6 +48,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.2.2/lity.min.css" rel="stylesheet" />
   <link href="assets/css/style.min.css" rel="stylesheet"/>
   <script src="assets/components/modernizr/modernizr.js"></script>
   <script src="https://use.fontawesome.com/adbcf8d71f.js"></script>
@@ -96,18 +97,19 @@
   </div>
 
   <section id="home" class="section bg-home">
-    <div class="absoluteCenter">
+    <div class="absoluteCenter main-text">
       <div class="container">
         <div class="content main">
           <h1 class="curve">WE’RE NOT A STATE,</h1>
-          <a class="btn btn-primary -border"><i class="fa fa-play fa-2x"></i></a>
+          <a id="video" class="btn btn-primary -border" data-lightbox=""><i class="fa fa-play fa-2x"></i></a>
           <h1>more a state of mind.</h1>
         </div>
       </div>
     </div>
+    <img src="/assets/img/bg/landscape-overlay.png" class="img-responsive mountain-overlay" />
     <a href="#proclamation" class="toggle-next"></a>
   </section>
-  <section id="proclamation" class="section bg-2">
+  <section id="proclamation" class="section bg-grid">
     <div class="absoluteCenter">
       <div class="container">
         <div class="content">
@@ -240,7 +242,7 @@
     </div>
     <a href="#republication" class="toggle-next"></a>
   </section>
-  <section id="republication" class="section bg-1">
+  <section id="republication" class="section bg-grid">
     <div class="absoluteCenter">
       <div class="container">
         <div class="content">
@@ -334,6 +336,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.2.2/lity.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="/assets/js/jquery.lettering-0.6.1.min.js"></script>
   <script src="/assets/js/circletype.min.js"></script>
   <script src="/assets/js/stellar.js"></script>

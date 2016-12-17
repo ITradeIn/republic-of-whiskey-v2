@@ -41,5 +41,6 @@ $RECYCLE.BIN/
 app/assets/css/style.css
 app/assets/css/style.min.css
 app/assets/js/scripts.min.js
+app/assets/js/scripts.js
 
 node_modules
