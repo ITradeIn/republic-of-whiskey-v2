@@ -24,14 +24,11 @@
 
       $('.main-text').css({
         'opacity': (1 - (scrollTop / windowHeight)),
-        'top': 'calc(52% - (' + scrollTop + 'px)/3)'
+        'top': 'calc(50% - (' + scrollTop + 'px)/3)'
       });
     }
 
     $('a').smoothScroll();
-    setTimeout(function() {
-      $('.curve').circleType({radius: 1800});
-    }, 1000);
 
     $('#submit-newletter-form').click(function () {
       $('#mc-embedded-subscribe-form').submit();
@@ -42,7 +39,8 @@
     $('#our-whiskey-1').stellar();
 
     $('#video').click(function () {
-      lity('https://www.youtube.com/channel/UCNXrQGNCNOgUhnIgWMqQMzw');
+      // lity('https://www.youtube.com/channel/UCNXrQGNCNOgUhnIgWMqQMzw');
+      lity('https://vimeo.com/195769691');
     });
 
     setScroll();
