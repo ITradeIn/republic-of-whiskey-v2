@@ -105,6 +105,7 @@
 #video {
   position: absolute;
   z-index: 1;
+  cursor: pointer;
   @extend %center-xy;
   @media (max-width: 767px) {
     width: 9%;
