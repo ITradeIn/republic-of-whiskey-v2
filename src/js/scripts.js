@@ -31,8 +31,8 @@
     $('#our-whiskey-1').stellar();
 
     $('#video').click(function () {
-      // lity('https://www.youtube.com/channel/UCNXrQGNCNOgUhnIgWMqQMzw');
-      lity('https://vimeo.com/195769691');
+      lity('https://www.youtube.com/embed/4ZczvDxndYw');
+      // lity('https://vimeo.com/195769691');
     });
 
     setScroll();

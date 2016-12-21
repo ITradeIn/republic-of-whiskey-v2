@@ -4,6 +4,16 @@
   left: 0;
   z-index: 1;
   @extend %center-y;
+  @media (max-width: 480px) {
+    &:not(.main-text) {
+      position: initial;
+      transform: none;
+      padding: 70px 0 100px;
+    }
+    > .container {
+      padding: 0;
+    }
+  }
 }
 .btn {
   background-color: transparent;
