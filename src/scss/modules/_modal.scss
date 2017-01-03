@@ -1,0 +1,33 @@
+.modal {
+  &.fade.in {
+    background: rgba(0,0,0,0.75);
+  }
+  .modal-dialog {
+    margin: 100px auto 50px;
+  }
+  .modal-header {
+    border: none;
+    text-align: center;
+  }
+  .modal-content {
+    background: transparent;
+    color: $white;
+  }
+  .close {
+    position: fixed;
+    top: 10px;
+    right: 45px;
+    font-size: 70px;
+    opacity: 1;
+    color: $white;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: 200;
+  }
+  p {
+    font-size: 14px;
+    font-family: $font-secondary;
+    margin-bottom: 15px;
+    line-height: 20px;
+  }
+}
