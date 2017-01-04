@@ -27,6 +27,11 @@ header > .navbar {
     width: 260px;
     @extend %center-x;
   }
+  .container {
+    @media (max-width: 768px) {
+      width: auto;
+    }
+  }
 }
 @media (max-width: 767px) {
   .navbar-offcanvas {
@@ -51,5 +56,76 @@ header > .navbar {
   }
   .icon-bar {
     background: $white;
+  }
+}
+.sidebar-footer {
+  position: absolute;
+  width: calc(100% - 40px);
+  bottom: 50px;
+  left: 0;
+  color: $white;
+  padding: 20px;
+  .social-media {
+    margin-bottom: 15px;
+    a {
+      height: 35px;
+      width: 35px;
+      line-height: 37px;
+      color: $primary!important;
+      font-size: 22px;
+    }
+    li:nth-child(2) {
+      margin: 0 10px;
+    }
+  }
+  .copyright {
+    p, a {
+      font-size: 11px;
+      font-family: Helvetica,Arial,sans-serif;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+    a {
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  }
+  .subscribe {
+    margin-bottom: 15px;
+    .btn {
+      width: auto;
+      padding: 8px 5px;
+      font-size: 13px;
+      text-align: center;
+    }
+    .email-form {
+      display: flex;
+      width: 100%;
+      margin-right: 10px;
+      .opening,
+      .closing {
+        border: 1px solid $secondary;
+        width: 7px;
+      }
+      .opening {
+        border-right: none;
+      }
+      .closing {
+        border-left: none;
+      }
+      #mc_embed_signup {
+        width: calc(100% - 14px);
+      }
+      input[type="email"] {
+        font-family: $font-secondary;
+        font-weight: 200;
+        padding: 5px 0;
+        background: transparent;border: none;
+        width: 100%;
+        text-align: center;
+        @include font-size(15);
+      }
+    }
   }
 }

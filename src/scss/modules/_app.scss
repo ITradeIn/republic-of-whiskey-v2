@@ -50,6 +50,7 @@
     background-color: $white;
     color: $primary;
     border: 2px solid $white;
+    cursor: pointer;
     @include border-radius(48px);
     @include transition-all(0.25s);
   }
@@ -59,5 +60,23 @@
   }
   li:nth-child(2) {
     margin: 0 20px;
+  }
+}
+.social-media.fixed {
+  position: fixed;
+  top: 42px;
+  right: 30px;
+  z-index: 1000;
+  @media (max-width: 1400px) {
+    display: none;
+  }
+  a {
+    height: 17px;
+    width: 17px;
+    line-height: 19px;
+    font-size: 12px;
+  }
+  li:nth-child(2) {
+    margin: 0 7px;
   }
 }
